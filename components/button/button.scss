@@ -1,0 +1,38 @@
+.btn {
+  height: 50px;
+  border-radius: 8px;
+  font-family: 'Gotham', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &--primary {
+    background-color: $btn-primary-normal;
+    color: white;
+
+    &:hover {
+      background-color: $btn-primary-hover;
+      color: white;
+    }
+
+    &:active {
+      background-color: $btn-primary-click;
+      color: white;
+    }
+
+    &.is-disabled {
+      background-color: $btn-primary-disabled;
+      color: $neutral-600;
+      pointer-events: none;
+      cursor: not-allowed;
+      color: white;
+    }
+
+    &.is-activo {
+      background-color: $btn-primary-activo;
+      color: white;
+    }
+  }
+}

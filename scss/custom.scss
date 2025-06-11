@@ -1,0 +1,398 @@
+@use "../node_modules/bootstrap/scss/bootstrap";
+
+$btn-primary-normal: #6D0E1B !default;
+$btn-primary-hover: #570B15 !default;
+$btn-primary-click: #2B050A !default;
+$btn-primary-activo: #200408 !default;
+$btn-primary-disabled: #B4B4B4 !default;
+
+$btn-secondary-normal: #C7B29E !default;
+$btn-secondary-hover: #9F8E7E !default;
+$btn-secondary-click: #4F473F !default;
+$btn-secondary-activo: #4F473F !default;
+$btn-secondary-disabled: #B4B4B4 !default;
+
+$btn-tertiary-normal: #F9F7F5 !default;
+$btn-tertiary-hover: #F9F7F5 !default;
+$btn-tertiary-click: #D7C9BB !default;
+$btn-tertiary-activo: #D7C9BB !default;
+$btn-tertiary-disabled: #F9F7F5 !default;
+
+// === Paleta PRIMARY ===
+$primary-100: #e3d9cf !default;
+$primary-200: #c7b29e !default;
+$primary-300: #af9174 !default;
+$primary-400: #8e6f52 !default;
+$primary-500: #644f3a !default;
+$primary-10:  #c7b29e !default;
+$primary-25:  #c7b29e !default;
+$primary-40:  #c7b29e !default;
+$primary-50:  #c7b29e !default;
+
+// === Paleta SECONDARY ===
+$secondary-100: #c0bdbf !default;
+$secondary-200: #a09c9e !default;
+$secondary-300: #817c7e !default;
+$secondary-400: #605c5e !default;
+$secondary-500: #373435 !default;
+$secondary-10:  #605c5e !default;
+$secondary-25:  #605c5e !default;
+$secondary-40:  #605c5e !default;
+$secondary-50:  #605c5e !default;
+
+// === Paleta NEUTRAL ===
+$neutral-100: #fffefc !default;
+$neutral-200: #fceac8 !default;
+$neutral-300: #f2d59a !default;
+$neutral-400: #e3bd73 !default;
+$neutral-500: #cda251 !default;
+$neutral-600: #a78340 !default;
+$neutral-700: #76603b !default;
+$neutral-800: #4a402f !default;
+$neutral-900: #25221d !default;
+$neutral-1000: #070707 !default;
+$neutral-10: #070707 !default;
+
+// === Paleta TERTIARY ===
+$tertiary-100: #ea8099 !default;
+$tertiary-200: #e04167 !default;
+$tertiary-300: #b81e43 !default;
+$tertiary-400: #79142c !default;
+$tertiary-500: #470c1a !default;
+$tertiary-10:  #79142c !default;
+$tertiary-50:  #79142c !default;
+
+// === Paleta ERROR ===
+$error-100: #fb3748 !default;
+$error-200: #d00416 !default;
+$error-10:  #fb3748 !default;
+
+// === Paleta ALERT ===
+$alert-100: #ffdb43 !default;
+$alert-200: #dfb400 !default;
+$alert-10:  #ffdb43 !default;
+
+// === Paleta SUCCESS ===
+$success-100: #84ebb4 !default;
+$success-200: #1fc16b !default;
+$success-10:  #1fc16b !default;
+
+// === Paleta INFO ===
+$info-100: #07a0fa !default;
+$info-10:  #07a0fa !default;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham/Gotham-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham/Gotham-ThinItalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham/Gotham-XLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham/Gotham-XLightItalic.otf') format('opentype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham/Gotham-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham/Gotham-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham/Gotham-Book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham/Gotham-BookItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham/Gotham-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham/Gotham-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham/Gotham-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham/Gotham-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham/Gotham-Black.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham/Gotham-BlackItalic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham/Gotham-Ultra.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham/Gotham-UltraItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+.gotham-thin {
+  font-family: 'Gotham', sans-serif;
+  font-weight: 100;
+}
+
+.gotham-thin-italic {
+  font-family: 'Gotham', sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.gotham-xlight {
+  font-family: 'Gotham', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.gotham-xlight-italic {
+  font-family: 'Gotham', sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.gotham-light {
+  font-family: 'Gotham', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.gotham-light-italic {
+  font-family: 'Gotham', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.gotham-book {
+  font-family: 'Gotham', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gotham-book-italic {
+  font-family: 'Gotham', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.gotham-medium {
+  font-family: 'Gotham', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.gotham-medium-italic {
+  font-family: 'Gotham', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.gotham-bold {
+  font-family: 'Gotham', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.gotham-bold-italic {
+  font-family: 'Gotham', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.gotham-black {
+  font-family: 'Gotham', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.gotham-black-italic {
+  font-family: 'Gotham', sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.gotham-ultra {
+  font-family: 'Gotham', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.gotham-ultra-italic {
+  font-family: 'Gotham', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.font-primary {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-secondary {
+  font-family: 'Gotham', sans-serif;
+}
+
+// === Sistema de stroke ===
+
+.stroke-0 {
+  border-width: 0 !important;
+}
+
+.stroke-1 {
+  border-width: 1px !important;
+}
+
+.stroke-2 {
+  border-width: 2px !important;
+}
+
+.stroke-3 {
+  border-width: 3px !important;
+}
+
+.stroke-4 {
+  border-width: 4px !important;
+}
+
+$border-0: 0px;
+$border-1: 1px;
+$border-2: 2px;
+$border-3: 3px;
+$border-4: 4px;
+
+// === Sistema de border radius ===
+
+.radius-none {
+  border-radius: 0 !important;
+}
+
+.radius-2 {
+  border-radius: 8px !important;
+}
+
+.radius-4 {
+  border-radius: 16px !important;
+}
+
+.radius-6 {
+  border-radius: 24px !important;
+}
+
+.radius-full {
+  border-radius: 999px !important;
+}
+
+// === Niveles de sombra Efectos (elevación) ===
+
+.shadow-e0 {
+  box-shadow: none !important;
+}
+
+.shadow-e1 {
+  box-shadow:
+    0px 0px 0px 1px rgba(0, 0, 0, 0.08),
+    0px 1px 4px -2px rgba(0, 0, 0, 0.13) !important;
+}
+
+.shadow-e2 {
+  box-shadow:
+    0px 0px 0px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 6px -2px rgba(0, 0, 0, 0.19) !important;
+}
+
+.shadow-e3 {
+  box-shadow:
+    0px 0px 0px 1px rgba(0, 0, 0, 0.08),
+    0px 4px 8px -2px rgba(0, 0, 0, 0.25) !important;
+}
+
+// Spacing tokens
+
+$spacing-0: 2px;
+$spacing-1: 4px;
+$spacing-2: 8px;
+$spacing-3: 12px;
+$spacing-4: 16px;
+$spacing-5: 20px;
+$spacing-6: 24px;
+$spacing-7: 32px;
+$spacing-8: 40px;
+$spacing-9: 48px;
+$spacing-10: 56px;
+$spacing-11: 64px;
+$spacing-12: 72px;
+$spacing-13: 80px;
+$spacing-14: 96px;
+$spacing-15: 112px;
+$spacing-16: 128px;
+
+@import '../components/button/button.scss';
+@import '../components/header/header-info.scss';
+@import '../components/banner/bg-banner.scss';
+@import '../components/service/card-service.scss';
