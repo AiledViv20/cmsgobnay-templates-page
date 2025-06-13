@@ -1,5 +1,7 @@
 @use "../node_modules/bootstrap/scss/bootstrap";
 
+$bg-general: #F9F7F5 !default;
+
 $btn-primary-normal: #6D0E1B !default;
 $btn-primary-hover: #570B15 !default;
 $btn-primary-click: #2B050A !default;
@@ -392,7 +394,11 @@ $spacing-14: 96px;
 $spacing-15: 112px;
 $spacing-16: 128px;
 
+@import '../css/style.scss';
 @import '../components/button/button.scss';
 @import '../components/header/header-info.scss';
 @import '../components/banner/bg-banner.scss';
 @import '../components/service/card-service.scss';
+@import '../components/ads/ads.scss';
+@import '../components/new/new.scss';
+@import '../components/multimedia/multimedia.scss';

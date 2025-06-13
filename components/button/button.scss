@@ -24,7 +24,6 @@
 
     &.is-disabled {
       background-color: $btn-primary-disabled;
-      color: $neutral-600;
       pointer-events: none;
       cursor: not-allowed;
       color: white;
@@ -33,6 +32,60 @@
     &.is-activo {
       background-color: $btn-primary-activo;
       color: white;
+    }
+  }
+
+  &--secondary {
+    background-color: $btn-secondary-normal;
+    color: #1C1B1C;
+
+    &:hover {
+      background-color: $btn-secondary-hover;
+      color: #1C1B1C;
+    }
+
+    &:active {
+      background-color: $btn-secondary-click;
+      color: #1C1B1C;
+    }
+
+    &.is-disabled {
+      background-color: $btn-secondary-disabled;
+      pointer-events: none;
+      cursor: not-allowed;
+      color: #1C1B1C;
+    }
+
+    &.is-activo {
+      background-color: $btn-secondary-activo;
+      color: #1C1B1C;
+    }
+  }
+
+  &--tertiary {
+    background-color: $btn-tertiary-normal;
+    color: #1C1B1C;
+
+    &:hover {
+      background-color: $btn-tertiary-hover;
+      color: #1C1B1C;
+    }
+
+    &:active {
+      background-color: $btn-tertiary-click;
+      color: #1C1B1C;
+    }
+
+    &.is-disabled {
+      background-color: $btn-tertiary-disabled;
+      pointer-events: none;
+      cursor: not-allowed;
+      color: #1C1B1C;
+    }
+
+    &.is-activo {
+      background-color: $btn-tertiary-activo;
+      color: #1C1B1C;
     }
   }
 }
