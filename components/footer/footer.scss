@@ -1,0 +1,48 @@
+.section-footer {
+  font-family: 'Montserrat', sans-serif;
+  color: #828282;
+
+  a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #828282;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  h4 {
+    font-size: 22px;
+    color: #505050;
+  }
+
+  .divider {
+    border-bottom: 1px solid #505050;
+    width: 100%;
+  }
+
+  .bg-banner-end-page {
+    width: 100%;
+    height: 87px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .info-footer {
+    width: 100%;
+    height: 40px;
+    background-color: $bg-footer;
+    p {
+      color: #C7B29E;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+}

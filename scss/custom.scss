@@ -1,6 +1,7 @@
 @use "../node_modules/bootstrap/scss/bootstrap";
 
 $bg-general: #F9F7F5 !default;
+$bg-footer: #4F473F !default;
 
 $btn-primary-normal: #6D0E1B !default;
 $btn-primary-hover: #570B15 !default;
@@ -402,3 +403,4 @@ $spacing-16: 128px;
 @import '../components/ads/ads.scss';
 @import '../components/new/new.scss';
 @import '../components/multimedia/multimedia.scss';
+@import '../components/footer/footer.scss';
